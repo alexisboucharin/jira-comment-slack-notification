@@ -152,7 +152,9 @@ app.get('/', function(req, res) {
       successMsg: 'You can now receive and respond to Jira comments from within Slack!'
     })
   } else {
-    res.render('home')
+    res.render('message', {
+      successMsg: 'Fail test'
+    })
   }
 
 })
